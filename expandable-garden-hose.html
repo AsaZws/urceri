@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+</head>
+<body>
+<div id="magnifier">
+    <div class="small-box">
+        <img src="images/small_1.jpg" alt="#">
+        <span class="hover"></span>
+    </div>
+
+    <div class="thumbnail-box">
+        <div class="list">
+            <ul class="wrapper">
+                <li class="item item-cur" data-src="images/small_1.jpg"><img src="images/thumbnail_1.jpg" alt="#"></li>
+
+                <li class="item" data-src="images/small_2.jpg"><img src="images/thumbnail_2.jpg" alt="#"></li>
+
+                <li class="item" data-src="images/small_3.jpg"><img src="images/thumbnail_3.jpg" alt="#"></li>
+
+                <li class="item" data-src="images/small_4.jpg"><img src="images/thumbnail_4.jpg" alt="#"></li>
+
+                <li class="item" data-src="images/small_5.jpg"><img src="images/thumbnail_5.jpg" alt="#"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="big-box">
+        <img src="images/big_1.jpg" alt="#">
+    </div>
+</div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/magnifier.js"></script>
+  <script>
+    $(function () {
+
+      $('#magnifier').magnifier();
+
+
+    });
+
+  </script>
+  
+</body>
+</html>
